@@ -1,18 +1,32 @@
-import './App.css';
-import Header from "./Header";
+// class based component
 
-// BEM - Block Element Modifier
+import React from 'react'
+ function App () {
+    return (
+      <div>
+       <h1>Hello World</h1>
+      </div>
+    )
+  }
 
-function App() {
-  return (
-    <div className="app">
-      <Header />
-      <h1 className="app__title">Hello World</h1>
-      <h1 className="app__title app__title--large">This is a large title</h1>
-      <h1 className="app__title app__title--small">This is a small title</h1>
-    </div>
-  )
-}
+
+export default App;
+
+// import './App.css';
+// import Header from "./Header";
+
+// // BEM - Block Element Modifier
+
+// function App() {
+//   return (
+//     <div className="app">
+//       <Header />
+//       <h1 className="app__title">Hello World</h1>
+//       <h1 className="app__title app__title--large">This is a large title</h1>
+//       <h1 className="app__title app__title--small">This is a small title</h1>
+//     </div>
+//   )
+// }
 
 
   // introduction to jsx
@@ -51,4 +65,4 @@ function App() {
 
 // }
 
-export default App;
+// export default App;
