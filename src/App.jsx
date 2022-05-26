@@ -1,16 +1,46 @@
+import React, {useState} from 'react';
+
+function App() {
+const [count, setCount] = useState(0);
+const [name, setName] = useState('Seyi')
+
+const increment = () => {
+  setCount(count + 1)
+};
+
+const decrement = () => {
+  setCount(count - 1);
+}
+  return (
+    <div>
+      <h1>Welcome to my counter app</h1>
+      <p>The count is:{count}</p>
+      <button onClick={decrement}>-</button>
+      <button onClick={increment}>+</button>
+    </div>
+  )
+}
+
+export default App
+
+
+
 // class based component
 
-import React from 'react'
- function App () {
-    return (
-      <div>
-       <h1>Hello World</h1>
-      </div>
-    )
-  }
+// import React, { Component } from 'react'
 
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+        
+//       </div>
+//     )
+//   }
+// }
 
-export default App;
+// export default App;
+
 
 // import './App.css';
 // import Header from "./Header";
