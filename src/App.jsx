@@ -1,27 +1,52 @@
-import React, {useState} from 'react';
+import React from 'react'
+import Product from './Product'
 
 function App() {
-const [count, setCount] = useState(0);
-const [name, setName] = useState('Seyi')
-
-const increment = () => {
-  setCount(count + 1)
-};
-
-const decrement = () => {
-  setCount(count - 1);
-}
   return (
     <div>
-      <h1>Welcome to my counter app</h1>
-      <p>The count is:{count}</p>
-      <button onClick={decrement}>-</button>
-      <button onClick={increment}>+</button>
+      <h1>Hello world</h1>
+
+<Product name='Amazon echo' description='Your AI Assistant' price={59.99} />
+
+      {/* product: name, description, price */}
+      {/* product: name, description, price */}
+      {/* product: name, description, price */}
+      {/* product: name, description, price */}
     </div>
   )
 }
 
 export default App
+
+
+
+
+// introduction to state
+
+// import React, {useState} from 'react';
+
+// function App() {
+// const [count, setCount] = useState(0);
+// const [name, setName] = useState('Seyi')
+
+// const increment = () => {
+//   setCount(count + 1)
+// };
+
+// const decrement = () => {
+//   setCount(count - 1);
+// }
+//   return (
+//     <div>
+//       <h1>Welcome to my counter app</h1>
+//       <p>The count is:{count}</p>
+//       <button onClick={decrement}>-</button>
+//       <button onClick={increment}>+</button>
+//     </div>
+//   )
+// }
+
+// export default App
 
 
 
